@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/slack_chat
+    username: postgres
+    password: postgres
+    driverClassName: org.postgresql.Driver
+    hikari:
+      maximumPoolSize: 16
+
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
+slack-api:
+  token: YOUR_TOKEN_HERE
